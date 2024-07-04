@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.582);
 }
 
 * {
@@ -9,7 +10,8 @@
 }
 
 body {
-  background-color: #14rgb(105, 141, 240)
+  background-color: rgb(115, 222, 255);
+  height: 2500px;
 }
 
 .wrapper {
@@ -44,7 +46,7 @@ body {
 .itemLeft,
 .itemRight {
   width: 200px;
-  height: 100px;
+  height: 200px;
   background-color: #37a85d;
   border-radius: 6px;
   position: absolute;
@@ -63,43 +65,172 @@ body {
   animation-name: scrollRight;
 }
 
+
 .item1 {
   animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  background-image: url(Images/Saito-Naoki.png);
+  object-fit: fill;
 }
 
 .item2 {
   animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  background-image: url(Images/Marc-Brunet.png);
+  object-fit: fill;
 }
 
 .item3 {
   animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  background-image: url(Images/pikat.png);
+  object-fit: fill;
 }
 
 .item4 {
   animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  background-image: url(Images/Proko.png);
+  object-fit: fill;
 }
 
 .item5 {
   animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  background-image: url(Images/TB-CHOI.jpg);
+  object-fit: fill;
 }
 
 .item6 {
   animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  background-image: url(Images/Sinix-Design.jpg);
+  object-fit: scale-down;
 }
 
 .item7 {
   animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  background-image: url(Images/Adam-Duff.jpg);
+  object-fit: fill;
 }
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  background-image: url(Images/Chommang-Drawing.jpg);
+  object-fit: fill;
+}
+.item9 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  background-image: url(Images/David-Finch.jpg);
+  object-fit: fill;
+}
+
+.item10 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  background-image: url(Images/James-Gurney.jpg);
+  object-fit: fill;
+}
+
+.item11 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  background-image: url(Images/Hodraw-official.jpg);
+  object-fit: fill;
+}
+
+.item12 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  background-image: url(Images/Mmmmonexx.jpg);
+  object-fit: fill;
+}
+
+.item13 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  background-image: url(Images/Marco-Bucci.jpg);
+  object-fit: fill;
+}
+
+.item14 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  background-image: url(Images/Mateusz-Urbanowicz.jpg);
+  object-fit: fill;
+}
+
+.item15 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  background-image: url(Images/Swatches.jpg);
+  object-fit: fill;
+}
+
+.item16 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  background-image: url(Images/Trent-Kaniuga.jpg);
+  object-fit: fill;
 }
 
 .content {
     width: 100%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 5%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgb(17, 153, 216);
+    color: rgb(0, 0, 0);
+    text-shadow: 60px black;
+    -webkit-text-stroke: 10px black;
+    font-size: 30px;
+}
+
+.Mainpage1{
+  text-align: left;
+  margin-right: 30%;
+  position: relative;
+  top: 10%;
+  font-size: 30px;
+}
+.Mainpage1 .Imagerow{
+  display: flex;
+}
+
+.Mainpage1 .Image{
+  position: relative;
+  height: 250px;
+  width: 350px;
+  cursor: pointer;
+
+}
+.Mainpage2 {
+  text-align: right;
+  top: 20%;
+  margin-left: 30%;
+  position: relative;
+  font-size: 30px;
+}
+
+.Mainpage2 .imagerow{
+  display: flex;
+}
+
+.Mainpage2 .Images{
+
+  height: 250px;
+  width: -25%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Mainpage2 .imagerow2{
+  display: flex;
+}
+
+.Mainpage2 .Images2{
+
+  height: 250px;
+  width: -25%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Mainpage2 .imagerow3{
+  display: flex;
+}
+
+.Mainpage2 .Images3{
+
+  height: 250px;
+  width: -25%;
+  padding: 5px;
+  cursor: pointer;
 }

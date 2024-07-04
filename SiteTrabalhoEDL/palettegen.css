@@ -65,19 +65,44 @@ body{
     box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
     transform: translateX(-50%);
 }
-.refresh-palette2{
-    position: relative;
-    left: 50%;
-    bottom: 5px;
-    outline: none;
-    color: #fff;
+.row2{
+    background: #ffd1d1;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.row2 .options .option{
+    display: flex;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 12px 20px;
-    background: green;
-    border: 2px solid #fff;
-    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
-    transform: translateX(-50%);
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option:is(:hover, .active) :where(span, label){
+    color: rgb(16, 182, 1); 
+}
+
+.row3{
+    background: #d7efff;
+}
+
+.options2{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.row3 .options2 .option2{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option2:is(:hover, .active2) :where(span, label){
+    color: rgb(16, 182, 1);
 }
